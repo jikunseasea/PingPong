@@ -1,5 +1,5 @@
 import { range } from 'rxjs/observable/range';
-import { filter, scan, take } from 'rxjs/operators';
+import { filter, scan, take, map } from 'rxjs/operators';
 
 
 const source$ = range(0, 10);
