@@ -1,19 +1,13 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-
-
+const path = require('path');
 
 module.exports = {
   entry: {
     polyfill: 'babel-polyfill',
     app: './src/index.js'
   },
-  plugins: [
-    new CleanWebpackPlugin(['build']),
-    new HtmlWebpackPlugin({
-      title: 'Ping Pong Game'
-    })
-  ],
+  output: {
+    path: path.resolve(__dirname, 'build')
+  },
   module: {
     rules: [
       {
