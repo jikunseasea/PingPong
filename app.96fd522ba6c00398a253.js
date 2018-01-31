@@ -1,1 +1,0 @@
-webpackJsonp([1],{lVK7:function(o,s,c){"use strict";console.log("sdfa")}},["lVK7"]);
