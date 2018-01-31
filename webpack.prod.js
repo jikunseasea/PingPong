@@ -12,7 +12,6 @@ module.exports = merge(common, {
   plugins: [
     new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Ping Pong Game',
       template: 'public/index.html'
     }),
     new webpack.HashedModuleIdsPlugin(),
