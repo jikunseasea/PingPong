@@ -19,14 +19,11 @@ let game = new Game(
 );
 
 
-if (module.hot && process.env.NODE_ENV === 'dev') {
-  module.hot.accept('./Game', (...args) => {
-    console.log('update ====================')
-    console.log(args)
-    // const canvas = document.getElementById('canvas');
-    // canvas.remove();
-    // const nextCanvas = canvas.cloneNode();
-    // document.body.appendChild(nextCanvas);
-    game = new Game(document.getElementById('canvas'));
-  });
-}
+// if (module.hot && process.env.NODE_ENV === 'dev') {
+//   module.hot.accept('./Game', (...args) => {
+//     console.log('update ====================')
+
+//     game = new Game(document.getElementById('canvas'));
+//     console.log(game);
+//   });
+// }
