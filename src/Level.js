@@ -4,7 +4,6 @@ import { withLatestFrom, scan } from "rxjs/operators";
 
 class Level {
   constructor(canvas) {
-    console.log('adfs')
     this.canvas = canvas;
     this.ctx = this.canvas.getContext('2d');
     this.interval$ = new Subject();
